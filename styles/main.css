@@ -1,0 +1,266 @@
+/* 1 */
+.animation-1 .box:hover {
+  transition: all 0.6s;
+  background-color: orange;
+}
+
+/* 2 */
+.animation-2 .box {
+  transition: all 0.6s;
+}
+
+.animation-2 .box:hover {
+  background-color: orange;
+}
+
+/* 3 */
+.animation-3 .box {
+  transition: width 0.6s;
+}
+
+.animation-3 .box:hover {
+  background-color: rgb(120, 143, 43);
+  width: 100%;
+}
+
+/* 4 */
+.animation-4 .box {
+  transition: left 0.5s, top 2s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.animation-4 .box:hover {
+  left: 10%;
+  top: 10%;
+}
+
+/* 5 */
+.animation-5 .box {
+  transition: left 0.5s, top 2s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.animation-5:hover .box {
+  left: 10%;
+  top: 10%;
+}
+
+/* 6 */
+.animation-6 .box {
+  transition: transform 1s;
+}
+
+.animation-6 .box:hover {
+  transform: rotate(30deg);
+}
+
+/* 7 */
+.animation-7 .box {
+  transition: transform 1s;
+}
+
+.animation-7 .box:hover {
+  transform: rotate(30deg) scale(1.5);
+}
+
+/* 8 */
+.animation-8 .box {
+  transition: opacity 0.4s;
+  opacity: 0.3;
+}
+
+.animation-8 .box:hover {
+  opacity: 1;
+}
+
+/* 9 */
+.animation-9 .box:hover {
+}
+
+/* 10 */
+.animation-10 .box {
+}
+
+.animation-10 .box:hover {
+}
+
+/* 11 */
+.animation-11 .box {
+}
+
+.animation-11 .box:hover {
+}
+
+/* 12 */
+.animation-12 .box {
+}
+
+.animation-12 .box:hover {
+}
+
+/* 13 */
+.animation-13 .box:hover {
+  animation: animation-example-13 3s;
+}
+
+@keyframes animation-example-13 {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: yellow;
+  }
+}
+
+/* 14 */
+.animation-14 .box:hover {
+  animation: animation-example-14 3s;
+}
+
+@keyframes animation-example-14 {
+  0%,
+  100% {
+    background-color: #424242;
+  }
+
+  50% {
+    background-color: orange;
+  }
+}
+
+/* 15 */
+.animation-15 .box:hover {
+  animation: animation-example-15 3s;
+}
+
+@keyframes animation-example-15 {
+  0% {
+    transform: rotate(0);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  90% {
+    transform: rotate(-10deg);
+  }
+
+  /* show example with corrupted rotation deg 5 for 100% */
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* 16 */
+.animation-16:hover .box {
+}
+
+@keyframes animation-example-16 {
+}
+
+/* 17 */
+.animation-17 .box {
+}
+
+.animation-17:hover .box {
+}
+
+@keyframes animation-example-17 {
+}
+
+/* 18 */
+
+.animation-18:hover .box {
+}
+
+@keyframes animation-example-18 {
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2deba;
+  position: relative;
+}
+
+section:nth-child(odd) {
+  background-color: #eac7c7;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #424242;
+  color: #fff;
+  font-weight: bold;
+  margin: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
