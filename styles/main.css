@@ -6,7 +6,7 @@
 
 /* 2 */
 .animation-2 .box {
-  transition: all 0.6s;
+  transition: all 0.6s ease;
 }
 
 .animation-2 .box:hover {
@@ -104,7 +104,7 @@
 
 /* 13 */
 .animation-13 .box:hover {
-  animation: animation-example-13 3s;
+  animation: animation-example-13 1s;
 }
 
 @keyframes animation-example-13 {
@@ -139,7 +139,8 @@
 }
 
 @keyframes animation-example-15 {
-  0% {
+  0%,
+  100% {
     transform: rotate(0);
   }
 
@@ -161,11 +162,6 @@
 
   90% {
     transform: rotate(-10deg);
-  }
-
-  /* show example with corrupted rotation deg 5 for 100% */
-  100% {
-    transform: rotate(0);
   }
 }
 
